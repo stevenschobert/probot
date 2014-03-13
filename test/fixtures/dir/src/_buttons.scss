@@ -1,0 +1,69 @@
+// All of the classes in buttons are designed for controlling
+// button appearances, and definitely meant to be overwritten.
+@include bake-extend(
+  'button',
+  'button-primary',
+  'button-secondary'
+);
+
+// These variables are used internally just to keep things a
+// little easier to update. They are not meant to be exposed
+// for the user to change. Customization should happen through
+// the extending system.
+$button-font-family: Helvetica, Arial, 'sans-serif';
+$button-primary-background-color: #343434;
+$button-primary-border-color: #343434;
+$button-primary-text-color: #fff;
+$button-primary-active-background-color: #1b1b1b;
+$button-primary-active-border-color: #1b1b1b;
+$button-primary-active-text-color: #fff;
+$button-secondary-background-color: none;
+$button-secondary-border-color: #1b1b1b;
+$button-secondary-text-color: #343434;
+$button-secondary-active-background-color: #343434;
+$button-secondary-active-border-color: #343434;
+$button-secondary-active-text-color: #fff;
+
+// Button styles are defined using placeholder classes for easy customization.
+// To overide the button styles, you can redefine %style-name, or create your own
+// and just @extend %button.
+%button-primary {
+  @extend %button;
+  background: $button-primary-background-color;
+  border: 1px solid $button-primary-border-color;
+  color: $button-primary-text-color;
+
+  &:active {
+    background: $button-primary-active-background-color;
+    border-color: $button-primary-active-border-color;
+    color: $button-primary-active-text-color;
+  }
+}
+
+%button-secondary {
+  @extend %button;
+  background: $button-secondary-background-color;
+  border: 1px solid $button-secondary-border-color;
+  color: $button-secondary-text-color;
+
+  &:active {
+    background: $button-secondary-active-background-color;
+    border-color: 1px solid $button-secondary-active-border-color;
+    color: $button-secondary-active-text-color;
+  }
+}
+
+// Basic button class, designed to be extended and themed. Rather than customizing
+// this selector, its recommened you create your own button style and extend %button
+// instead. Refer to %button-primary for an example.
+%button {
+  @include appearance(none);
+  background: none;
+  border: 0;
+  font-family: $button-font-family;
+  font-size: 1.25em;
+  margin: 0;
+  padding: .5em 1em;
+  text-decoration: none;
+}
+

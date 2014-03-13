@@ -1,0 +1,31 @@
+{
+  "name": "probot",
+  "version": "0.1.0",
+  "description": "String.replace() entire files and directories.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jshint --reporter node_modules/jshint-stylish/stylish.js lib/* test/* && mocha --reporter spec test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stevenschobert/probot.git"
+  },
+  "author": "Steven Schobert <spschobert@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevenschobert/probot/issues"
+  },
+  "homepage": "https://github.com/stevenschobert/probot",
+  "devDependencies": {
+    "mocha": "^1.17.1",
+    "rimraf": "^2.2.6",
+    "assert-dir-equal": "^1.0.1",
+    "jshint": "^2.4.4",
+    "jshint-stylish": "^0.1.5",
+    "expect.js": "^0.3.1",
+    "fs-extra": "^0.8.1"
+  },
+  "dependencies": {
+    "bluebird": "^1.1.0"
+  }
+}

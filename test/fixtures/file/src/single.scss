@@ -1,0 +1,21 @@
+// Standard block of copy text. Ideally used with paragraphs.
+// Any links withing body-text are rendered as text-links
+%body-text {
+  color: $body-text-font-color;
+  font-family: $body-text-font-family;
+  font-size: 1em;
+
+  a {
+    @extend %text-link;
+  }
+}
+
+// A standard text-block. Used for something like a section of markdown.
+// Any headings, lists, links, etc inside .text-block will receive
+// styles, without you having to add .heading-xlarge to each element.
+%text-block {
+  h1 {
+    @extend %heading-xlarge;
+    margin-bottom: .55em;
+  }
+}
