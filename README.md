@@ -1,6 +1,8 @@
 Probot
 ======
 
+[![Build Status](https://travis-ci.org/stevenschobert/probot.svg?branch=master)](https://travis-ci.org/stevenschobert/probot)
+
 String.replace() entire files and directories. Fully asynchronous and promise-ready!
 
 ![probot](https://f.cloud.github.com/assets/896486/2437565/23d0cc6e-ade8-11e3-991e-dd2806844843.gif)
