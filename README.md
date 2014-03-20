@@ -67,7 +67,7 @@ you omit the callback, the method will return a promise instead.
 Search and replace all files in a directory. Subdirectories will be ignored. If you omit the
 callback, a promise will be returned instead. You can also optionally provide an options object with the following settings:
 
-- `ext: "filetype"` - Only process files of a specific file extension.
+- `ext: 'filetype'` - Only process files of a specific file extension.
 
 #### .string(stringToReplace)
 
