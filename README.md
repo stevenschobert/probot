@@ -2,6 +2,7 @@ Probot
 ======
 
 [![Build Status](https://travis-ci.org/stevenschobert/probot.svg?branch=master)](https://travis-ci.org/stevenschobert/probot)
+[![Dependency Status](https://gemnasium.com/stevenschobert/probot.svg)](https://gemnasium.com/stevenschobert/probot)
 
 String.replace() entire files and directories. Fully asynchronous and promise-ready!
 
