@@ -8,6 +8,10 @@ String.replace() entire files and directories. Fully asynchronous and promise-re
 
 ![probot](https://f.cloud.github.com/assets/896486/2437565/23d0cc6e-ade8-11e3-991e-dd2806844843.gif)
 
+## Notice
+
+As of 3/12/17, probot is no longer available through NPM. I've transfered the npm name over to the [Probot](https://github.com/probot/probot) project. The source will remain here on GitHub if you want to use it.
+
 ## Example
 
 ```js
@@ -27,14 +31,6 @@ bot.file('README.md').then(function() {
 }).catch(function(err) {
   throw err;
 });
-```
-
-## Installation
-
-Probot is available via through npm:
-
-```sh
-npm install --save probot
 ```
 
 ## Usage
